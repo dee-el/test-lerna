@@ -1,6 +1,6 @@
 {
   "name": "api",
-  "version": "1.0.0",
+  "version": "0.0.1-test.0",
   "description": "API",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
-    "web": "1.0.0"
+    "web": "^0.0.1-test.0"
   },
   "private": true
 }
