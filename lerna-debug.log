@@ -1,0 +1,51 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ], 'skip-npm': true, skipNpm: true }
+2 verbose rootPath /home/rheniere/Documents/test-node/test-lerna
+3 info version 2.0.0
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /home/rheniere/Documents/test-node/test-lerna/VERSION
+7 silly initialize attempt
+8 info current version 0.0.0
+9 silly getUpdates
+10 info Checking for updated packages...
+11 silly hasTags
+12 verbose hasTags false
+13 info Comparing with initial commit.
+14 silly collectDependents
+15 silly collectUpdates
+16 info No updated packages to publish.
+17 silly initialize success
+18 silly execute attempt
+19 silly isDetachedHead
+20 silly getCurrentBranch
+21 error execute Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+21 error execute Use '--' to separate paths from revisions, like this:
+21 error execute 'git <command> [<revision>...] -- [<file>...]'
+21 error execute
+21 error execute     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
+21 error execute     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+21 error execute     at Function.getCurrentBranch (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:183:59)
+21 error execute     at Function.isDetachedHead (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:37:37)
+21 error execute     at PublishCommand.execute (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:250:55)
+21 error execute     at PublishCommand._attempt (/usr/local/lib/node_modules/lerna/lib/Command.js:289:21)
+21 error execute     at /usr/local/lib/node_modules/lerna/lib/Command.js:276:15
+21 error execute     at /usr/local/lib/node_modules/lerna/lib/Command.js:298:13
+21 error execute     at PublishCommand.initialize (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:220:9)
+21 error execute     at PublishCommand._attempt (/usr/local/lib/node_modules/lerna/lib/Command.js:289:21)
+21 error execute  callback with error
+21 error execute  { Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+21 error execute Use '--' to separate paths from revisions, like this:
+21 error execute 'git <command> [<revision>...] -- [<file>...]'
+21 error execute
+21 error execute     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
+21 error execute     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+21 error execute     at Function.getCurrentBranch (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:183:59)
+21 error execute     at Function.isDetachedHead (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:37:37)
+21 error execute     at PublishCommand.execute (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:250:55)
+21 error execute     at PublishCommand._attempt (/usr/local/lib/node_modules/lerna/lib/Command.js:289:21)
+21 error execute     at /usr/local/lib/node_modules/lerna/lib/Command.js:276:15
+21 error execute     at /usr/local/lib/node_modules/lerna/lib/Command.js:298:13
+21 error execute     at PublishCommand.initialize (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:220:9)
+21 error execute     at PublishCommand._attempt (/usr/local/lib/node_modules/lerna/lib/Command.js:289:21)
+21 error execute   stack: 'Error: fatal: ambiguous argument \'HEAD\': unknown revision or path not in the working tree.\nUse \'--\' to separate paths from revisions, like this:\n\'git <command> [<revision>...] -- [<file>...]\'\n\n    at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:277:26)\n    at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)\n    at Function.getCurrentBranch (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:183:59)\n    at Function.isDetachedHead (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:37:37)\n    at PublishCommand.execute (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:250:55)\n    at PublishCommand._attempt (/usr/local/lib/node_modules/lerna/lib/Command.js:289:21)\n    at /usr/local/lib/node_modules/lerna/lib/Command.js:276:15\n    at /usr/local/lib/node_modules/lerna/lib/Command.js:298:13\n    at PublishCommand.initialize (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:220:9)\n    at PublishCommand._attempt (/usr/local/lib/node_modules/lerna/lib/Command.js:289:21)' }
