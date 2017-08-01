@@ -13,7 +13,12 @@ app.get('/', function (req, res) {
 
 app.get('/test', function (req, res) {
     console.log(web(1, 10));
-    res.send('hello world');
+    res.send('hello world !!!');
+});
+
+app.get('/test-2', function (req, res) {
+  console.log(web(1, 12));
+  res.send('hello world !!!+++++');
 });
 
 
